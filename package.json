@@ -1,0 +1,29 @@
+{
+  "name": "book_directory",
+  "version": "1.0.0",
+  "description": "A book directory, where you would need to create endpoints, using the four most basic methods: GET, POST, PUT and DELETE.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeeshanBari/Book_Directory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZeeshanBari/Book_Directory/issues"
+  },
+  "homepage": "https://github.com/ZeeshanBari/Book_Directory#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

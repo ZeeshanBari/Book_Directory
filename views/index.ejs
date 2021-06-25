@@ -1,0 +1,23 @@
+<%- include("./header") %>
+
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Book Directory</a>
+</nav>
+
+<div class="container mt-5">
+	<form action="/add" method="POST" class="d-flex">
+		<input type="text" name="book" class="form-control" placeholder="Enter Book">
+		<input type="submit" value="Add Book" class="btn btn-sm btn-primary mx-2">
+	</form>
+	<ul class="list-group mt-3">
+		<% books.forEach(book => { %>
+			<li class="list-group-item">
+				<%= book.book %>
+				<a href="/delete/<%= book._id %>" class="btn btn-danger btn-sm">Delete</a>
+			</li>
+		<% }) %>
+	</ul>
+</div>
+
+
+<%- include("./footer") %>
